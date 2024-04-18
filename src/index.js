@@ -35,7 +35,9 @@ const fg = require('fast-glob');
 
       if (files.length && !/\/$/.test(dst)) {
         // 单文件
-        const res = await oss.put(dst, resolve(files[0]))
+        const res = await oss.put(dst, resolve(files[0]), {
+              timeout: 1000*60*20
+            })
         core.setOutput('url', res.url)
       } else if (files.length && /\/$/.test(dst)) {
         // 目录
