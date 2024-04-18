@@ -1,9 +1,9 @@
 
-name: 'OSS Action'
-description: 'Upload assets to aliyun OSS'
+name: 'OSS Upload'
+description: 'Upload assets to Aliyun OSS'
 branding:
   icon: 'upload-cloud'
-  color: 'yellow'
+  color: 'orange'
 inputs:
   region:
     required: false
