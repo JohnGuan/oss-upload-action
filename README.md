@@ -21,7 +21,7 @@
 ```yaml
 - name: Upload to oss
   id: upload_to_oss
-  uses: johnguan/oss-upload-action@master
+  uses: JohnGuan/oss-upload-action@master
   with:
     key-id: ${{ secrets.OSS_KEY_ID }}
     key-secret: ${{ secrets.OSS_KEY_SECRET }}
